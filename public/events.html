@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ lang="en-GB" xml:lang="en-GB">
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" ></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="mystyle.css" rel="stylesheet" type="text/css" ></link>
+
+<title>Events</title>
+</head>
+
+<body>
+  <script src="website.js"></script>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">CoppaFeel!</a>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="theteam.html">The Team</a>
+    <a href="events.html">Events</a>
+    <a href="joinus.html">Join Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+  </div>
+
+<div class="jumbotron1">
+  <img class="logosvg" src="/pictures/logo2.svg" </img>
+
+  <div class="joinus">Whats On?</div>
+  <p>Check out whats happening around the campus</p>
+
+</div>
+<div class="hero-image2">
+  <div class="text-block2">
+    <h1> Attend Our Events</h1>
+      <p> If you sign up today, you get first priority when signing up for events!
+      You also get to hear first about all the exciting things that are occuring, as well as attending Events
+      at a discounted price and having the ability to become a committee member in the future!</p>
+  </div>
+</div>
+<div class="events">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <legend>Whats On?</legend>
+      <ul id="eventList" class="eventList"> </ul>
+      <!-- <p>Cake Sale </p> -->
+
+      <!-- <img class="cakesale" src="/pictures/cakesale.jpg" alt="cakesale" ></img> -->
+</div>
+    <div class="col-sm-4">
+  <form name="myForm" action="/" onsubmit="return validateEventForm()" method="POST">
+    <div class="fieldSet">
+    <fieldset>
+    <legend>Get Tickets Here: </legend>
+    <!-- <label class="field" for="email">Email</label>
+    <input type="text" id="email" name="email"/><br />
+    <label class="field" for="pwd">Password</label>
+    <input type="password" name="pwd"/><br /> -->
+    <div class="submit">
+      <button type="submit" class="button">Attend</button>
+    </div>
+  </fieldset>
+</div>
+  </form>
+
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <ul id="eventList1" class="eventList"> </ul>
+
+    <!-- <img class="salonnight" src="/pictures/salonnight.jpg" alt="salonnight" ></img> -->
+</div>
+  <div class="col-sm-4">
+<form name="myForm" action="/app.js" onsubmit="return validateEventForm()" method="post">
+  <div class="fieldSet">
+  <fieldset>
+  <!-- <label class="field" for="email">Email</label>
+  <input type="text" id="email" name="email"/><br />
+  <label class="field" for="pwd">Password</label>
+  <input type="password" name="pwd"/><br /> -->
+  <div class="submit">
+    <button type="submit" class="button">Attend</button>
+  </div>
+</fieldset>
+</div>
+</form>
+
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+
+    <ul id="eventList2" class="eventList"> </ul>
+    <!-- <img class="zumba" src="/pictures/zumba.jpg" alt="zumba" ></img> -->
+
+</div>
+  <div class="col-sm-4">
+<form name="myForm" action="/app.js" onsubmit="return validateEventForm()" method="post">
+  <div class="fieldSet">
+  <fieldset>
+  <!-- <label class="field" for="email">Email</label>
+  <input type="text" id="email" name="email"/><br />
+  <label class="field" for="pwd">Password</label>
+  <input type="password" name="pwd"/><br /> -->
+  <div class="submit">
+    <button type="submit" class="button">Attend</button>
+  </div></fieldset>
+</div>
+</form>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="filler"></div>
+</body>
+
+<div class="homebit">
+  <h4> </h4>
+</div>
+
+</html>

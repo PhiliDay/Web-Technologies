@@ -1,0 +1,577 @@
+body, html {
+    height: 100%;
+}
+
+.loginmember {
+  position: right;
+}
+/*Main page bits*/
+.homebit{
+  background-color: #FF4081;
+  color: #FFFFFF;
+  font-family: "Verdana", times, serif;
+  padding: 14px 16px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  left: 0;
+   right: 0;
+   bottom: 0;
+   height: 50px;
+}
+
+img.logosvg{
+  height: 5%;
+  width: 5%;
+}
+
+.topnav{
+  overflow: hidden;
+  background-color: #FF4081;
+}
+
+.filler {
+  padding-bottom: 5%;
+}
+.topnav a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* Hides the link that should open and close on small screens*/
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon{
+    float: right;
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+  td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+  thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.hero-image3{
+  height: 500%;
+}
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.nextnav a {
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    top: 50%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+legend
+{
+  color: #FFFFFF;
+  background-color: #FF4081;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 0;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+}
+
+.animated {
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+@keyframes fadeInUp {
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.learnmore a:link{
+  color: #FFFFFF;
+}
+
+.learnmore a:visited{
+  color: #FFFFFF;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #FFC3E1;
+}
+/*Home page*/
+.hero-image {
+  background-image: url("/pictures/background.png");
+ height: 90%;
+ position: relative;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .hero-image {
+        background-attachment: scroll;
+    }
+}
+
+.container-fluid header {
+  margin: auto;
+}
+
+.container {
+    position: relative;
+    font-family: Arial;
+}
+
+img.cakesale{
+  height: 60%;
+  width: 60%;
+}
+
+img.salonnight{
+  height: 60%;
+  width: 60%;
+}
+
+img.zumba{
+  height: 80%;
+  width: 80%;
+}
+
+
+.hero-text1 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 450%;
+  position: relative;
+  height: 15%;
+  left: 0%;
+}
+
+.hero-text2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 450%;
+  position: relative;
+  height: 30%;
+  left: 0%;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-inner{
+  height: 100%;
+  top: 40%;
+  left: 40;
+}
+
+.learnmore {
+background-color: #FF4081;
+border: none;
+color: white;
+padding: 10px 15px;
+text-align: center;
+font-size: 75%;
+font-family: "Verdana", times, serif;
+width: 10%;
+margin-left: 45%;
+margin-top: 7.5%;
+}
+
+.learnmore:hover {
+    background-color: #FFC3E1;
+}
+
+/*The team page*/
+.philipic {
+  background-color: #FF4081;
+}
+
+.vickypic {
+  background-color: #FF4081;
+}
+
+.serenapic {
+  background-color: #FF4081;
+}
+
+.serena{
+  font-family: "Verdana", times, serif;
+  width: 50%;
+  font-size: 100%;
+  padding: 14px 16px;
+}
+
+.vicky{
+  font-family: "Verdana", times, serif;
+  width: 50%;
+  font-size: 100%;
+  padding: 14px 16px;
+}
+
+.phili{
+  font-family: "Verdana", times, serif;
+  width: 50%;
+  font-size: 100%;
+  padding: 14px 16px;
+}
+
+img.philipic {
+  height: 50%;
+  width: 50%;
+  display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+img.vickypic {
+  height: 50%;
+  width: 50%;
+  display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+img.serenapic {
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.table {
+  width: 100%;
+}
+
+.tableteam{
+  padding: 14px 16px;
+}
+
+
+/*About us*/
+
+.aboutus1{
+  background-image: url("/pictures/cream_dust.png");
+}
+
+.loginbutton{
+  height:100px;
+  width: 100px;
+  margin-left: 25%;
+}
+
+.krisface {
+  height: 200px;
+  width: 300px;
+  margin-left: 25%;
+}
+
+.committee {
+  height: 8%;
+  width: 50%;
+  margin-left: 0%;
+  left: 0%;
+}
+
+.bristol {
+  width: 50%;
+  text-align: center;
+  font-family: "Verdana", times, serif;
+  font-size: 75%;
+}
+
+.table {
+  width: 100%;
+}
+
+.jumbotron1 {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: 100%;
+}
+
+@media (min-width: 576px) {
+  .jumbotron1 {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron1-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+.joinus {
+  font-size: 70px;
+  font-style: bold;
+}
+
+.text-block {
+    position: relative;
+    background-color: #FFFFFF;
+    color: black;
+    opacity: 0.85;
+    left: 15%;
+
+}
+
+.hero-image3 {
+  background-image: url("/pictures/background.png");
+ height: 100%;
+ position: relative;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: -2.5%;
+}
+
+
+/*Join us */
+
+div.fieldSet {
+  width: 500px;
+  border: solid white thin;
+  background-color: #FFFFFF;
+}
+
+label
+{
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 30%;
+  padding-top: 0.25em;
+  margin: 1em 5px 0 0;
+}
+
+input, select
+{
+  margin: 1em 0 0 0;
+  width: 50%;
+  border: 1px solid #FFC3E1;
+  padding: 2px;
+}
+
+input:focus, select:focus
+{
+  border: 1px solid #FFC3E1;
+}
+
+button {
+    background-color: #FF4081;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.hero-image2 {
+  background-image: url("/pictures/background.png");
+ height: 50%;
+ position: relative;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: -2.5%;
+}
+
+.text-block2 {
+    position: relative;
+    bottom: 0%;
+    right: 24%;
+    background-color: #FFFFFF;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-color: #FF4081;
+    margin-left: 50%;
+    opacity: 0.85;
+}
+
+
+.text-block4 {
+    position: relative;
+    top: 10%;
+    right: 24%;
+    background-color: #FFFFFF;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #FF4081;
+    margin-left: 50%;
+    opacity: 0.85;
+}
+
+.table2{
+  overflow-x:auto;
+  overflow-y: auto;
+  position: relative;
+}
+
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+/*Events*/
+
+.events{
+  position: relative;
+  border-color: #FF4081;
+  border-width: 100%;
+  margin: 5%;
+}
+
+.submit {
+  width: 50%;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: "Verdana", times, serif;
+  font-size: 75%;
+}
+
+/*log in */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}

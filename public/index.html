@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ lang="en-GB" xml:lang="en-GB">
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" ></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="mystyle.css" rel="stylesheet" type="text/css" ></link>
+  <link href="modal.css" rel="stylesheet" type="text/css" ></link>
+
+  <script src="website.js"></script>
+
+
+<title>Home - CoppaFeel!</title>
+
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">CoppaFeel!</a>
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="theteam.html">The Team</a>
+  <a href="events.html">Events</a>
+  <a href="joinus.html">Join Us</a>
+  <!-- <li id ="nameList" class="loginmember"> <%username%>  </li> -->
+
+  <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+</div>
+
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div class="hero-image">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active current carousel-item">
+              <div class="animated fadeInUp">
+                <p class="hero-text1">University of Bristol!</p>
+                <button class="learnmore" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            </div>
+          </div>
+            <div class="item carousel-item">
+                <p class="hero-text2">CoppaFeel! Team</p>
+                <button type="button" class="learnmore"><a href="aboutus.html">Learn More!</a></button>
+
+            </div>
+
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">exit</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/login" method="POST">
+    <div class="imgcontainer">
+      <img class="avatar" src="/pictures/logo1.svg" </img>
+
+    </div>
+
+    <div class="container">
+      <label for="Userid"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="Userid" required="true"></input>
+
+      <label for="Password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="Password" required="true"></input>
+
+      <button id="#x" type="submit">Login</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="homebit">
+  <h4> </h4>
+</div>
+
+</body>
+
+
+</html>

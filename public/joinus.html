@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ lang="en-GB" xml:lang="en-GB">
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" ></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="mystyle.css" rel="stylesheet" type="text/css" ></link>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'></link>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'></link>
+
+<title>Join Us</title>
+</head>
+<body>
+  <script src="website.js"></script>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">CoppaFeel!</a>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="theteam.html">The Team</a>
+    <a href="events.html">Events</a>
+    <a href="joinus.html">Join Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+  </div>
+
+<div class="jumbotron1">
+  <img class="logosvg" src="/pictures/logo2.svg" </img>
+
+  <div class="joinus">Join Us!</div>
+  <p>Become A Member Today</p>
+</div>
+
+
+
+<div class="hero-image2">
+  <div class="text-block2">
+    <h1> Why Join Us?</h1>
+      <p> If you sign up today, you get first priority when signing up for events!
+      You also get to hear first about all the exciting things that are occuring, as well as attending Events
+      at a discounted price and having the ability to become a committee member in the future!</p>
+  </div>
+</div>
+
+<div class="events">
+<div class="container">
+<div class="row">
+  <div class="col-sm-6">
+    <form name="myForm" onsubmit="return validateJoinForm()" action="/join"  method="POST">
+  <div class="container fieldSet">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <label for="firstname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstname"></input>
+    <label for="secondname"><b>Surname</b></label>
+    <input type="text" placeholder="Enter Surname" name="surname"></input>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email"></input>
+    <label class="field" for="degree">Degree Title</label>
+    <input type="text" placeholder="Enter Degree Name" name="degree" /><br />
+    <label class="field" for="graduation year">Graduation</label>
+      <select name="Year">
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    </select><br />
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"></input>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" ></input>
+
+    <div class="submit">
+      <button type="submit" class="button" onclick="return validateJoinForm()">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="container fieldSet">
+      <h1> Contact Us: </h1>
+      <p> Email: coppafeel@bristol.ac.uk </p>
+      <div id="container">
+      <div></div>
+
+      <div>
+      <h1>Contact Us: </h1>
+      <form name="emailForm" onsubmit="return fetchEmail()">
+      <input id="to" type="text" placeholder="Enter E-mail ID where you want to send" />
+      <input id="subject" type="text" placeholder="Write Subject" />
+      <textarea id="content" cols="40" rows="5" placeholder="Write what you want to send"></textarea>
+      <button id="send_email" onclick="return fetchEmail()">Send Email</button>
+    </form>
+      <span id="message"></span>
+      </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="filler"></div>
+
+</body>
+
+<div class="homebit">
+  <h4> </h4>
+</div>
+
+</html>

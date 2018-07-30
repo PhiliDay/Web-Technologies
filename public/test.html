@@ -1,0 +1,11 @@
+<script src="website.js"></script>
+<script>newX().test();</script>
+
+
+function newX() {
+ X.test = test;
+ function test() {
+ is(X.get() == 0);
+  function is(b) { if (!b) throw 'test failure'; }
+ }
+}
